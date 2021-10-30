@@ -1,0 +1,100 @@
+/* Import Bootstrap and its default variables */
+@import '~bootstrap/scss/bootstrap.scss';
+@import './global.scss';
+
+
+
+/* Modal Styles */
+.none {
+    display: none !important;
+}
+
+.block {
+    display: block !important;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.modal-content {
+    .modal-header {
+        .close {
+            float: right;
+            font-size: 21px;
+            font-weight: 700;
+            line-height: 1;
+            color: #000;
+            text-shadow: 0 1px 0 #fff;
+            filter: alpha(opacity=20);
+            opacity: .2;
+            padding: 0;
+            cursor: pointer;
+            background: 0 0;
+            border: 0;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            margin-top: -2px;
+
+            &:focus,
+            &:hover {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+                filter: alpha(opacity=50);
+                opacity: .5;
+            }
+        }
+
+
+
+        .modal-title {
+            font-weight: 500;
+            font-style: normal;
+            font-size: 22px;
+            line-height: 36px;
+            font-family: 'Work Sans', sans-serif;
+            color: #0A0B0B;
+
+            @media only screen and (max-width: 575px) {
+                font-size: 16px;
+                line-height: 26px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .modal-body {
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 21px;
+        font-family: 'Inter', sans-serif;
+
+        @media only screen and (max-width: 575px) {
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        p {
+            font-weight: 400;
+            font-style: normal;
+            font-size: 16px;
+            line-height: 21px;
+            font-family: 'Inter', sans-serif;
+
+            @media only screen and (max-width: 575px) {
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+    }
+
+    .modal-footer {
+        .btn {
+            font-weight: 400;
+            font-style: normal;
+            font-size: 16px;
+            line-height: 21px;
+            font-family: 'Inter', sans-serif;
+        }
+    }
+}
